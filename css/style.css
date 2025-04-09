@@ -30,6 +30,7 @@ body{
 .page-button {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    transition: all 0.3s ;
 }
 .page-button:hover{
     background-color: var(--primary-color);
@@ -196,6 +197,9 @@ nav{
 .close-btn:hover{
     background-color: black;
     border: 0;
+}
+.iframe-button:hover{
+    background-color:  #3287bb !important;
 }
 
 
