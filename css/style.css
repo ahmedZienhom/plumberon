@@ -1,0 +1,251 @@
+/* root and boot clssses */
+
+:root{
+    --primary-color:#0A4677;
+    --secondary-color:#F9BF0F;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+.min-0{
+    min-width: none !important;
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+.secondary-color{
+    color: var(--secondary-color);
+}
+.primary-bg{
+    background-color: var(--primary-color);
+}
+.secondary-bg{
+    background-color: var(--secondary-color);
+}
+.py-big{
+    padding-block: 9rem;
+}
+.page-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.page-button:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+.tinny{
+    vertical-align: super;
+    font-size: 1.5rem;
+}
+
+
+/* header */
+
+header {
+    background-color: #EDF1FC;
+}
+ 
+header li  a{
+    color: white !important;
+}
+
+header li .dropdown-menu a {
+    color: black !important;
+}
+header li a:hover{
+    color: var(--secondary-color) !important;
+}
+
+.social-logos i{
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+.social-logos i:hover{
+    color: var(--secondary-color);
+}
+
+
+
+header li .dropdown-menu a:hover{
+    background-color: transparent;
+}
+
+nav{
+    background-color: var(--primary-color);
+}
+
+
+nav{
+    transform: translateY(50%);
+}
+.dropdown-menu{
+    min-width: 0 !important;
+}
+
+
+
+
+/* head section */
+
+#head-section{
+    background-image: linear-gradient(rgba(23, 34, 77, 0.5),rgba(23, 34, 77, 0.5)) , url(../assets/head-section-image.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-title{
+    font-size: 2.5rem;
+}
+
+.my-form{
+    padding: .5rem;
+    outline: 0;
+    background-color: #EDF1FC;
+    border: 1px solid #EDF1FC;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+}
+.my-form:focus{
+    background-color: white;
+}
+
+
+/* about section */
+
+.translate-image {
+    transform: translate(-20px, -20px);
+    aspect-ratio: 1.2;
+    object-fit: cover;  
+}
+.fs-0{
+    font-size: 3rem;
+}
+.fa-check{
+    color: var(--secondary-color);
+}
+
+/* iframe section */
+
+.image-bg{
+    background-image: url(../assets/section-image.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;
+}
+
+.play-circle{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.play-circle::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation: shadow-spreed 3s  infinite;
+}
+
+.play-circle::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation: shadow-spreed 3s  infinite;
+}
+
+
+.fa-play{
+    transition: color 0.3s;
+
+}
+
+.play-circle:hover .fa-play{
+    color: var(--secondary-color);
+}
+
+@keyframes shadow-spreed {
+    70% {
+        -webkit-box-shadow: var(--secondary-color) 0 0 0 15px ;
+        box-shadow: var(--secondary-color) 0 0 0  15px;
+        opacity: 0;
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0;
+        box-shadow: 0 0 0 0;
+        opacity: 0;
+    }
+}
+.close-btn{
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right: 15px;
+    transition: all 0.3s;
+}
+.close-btn:hover{
+    background-color: black;
+    border: 0;
+}
+
+
+/* service section */
+
+.service-box{
+    transition: all 0.3s;
+}
+
+.service-box:hover{
+    box-shadow:  0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* choose section */
+
+#choose-section{
+    background-color: #EDF1FC;
+}
+
+/* image bg section */
+
+#image-bg-section{
+    background: linear-gradient(rgba(23, 34, 77, 0.5),rgba(23, 34, 77, 0.5)) ,url(../assets/section-image.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+/* testimonial section */
+
+.shadow-bottom{
+    box-shadow: 0px 15px 10px -15px #111;    
+}
+
+.quota-color{
+    color: #D3E3FE;
+}
+.customer-image-container{
+    width: 75px;
+    height: 75px;
+    transform: translateY(50%);
+}
+.footer-border{
+    border-color: #1075B2 !important;
+}
+
+/* footer */
+
+.footer-logos{
+    transition: all 0.3s ease-in-out;
+}
+.footer-logos i:hover{
+    color: var(--secondary-color);
+}

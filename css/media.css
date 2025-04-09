@@ -1,0 +1,34 @@
+@media screen and (min-width: 991px) {
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+    
+    .main-title{
+        font-size: 5rem;
+    }
+    .sizes{
+        width: 50%;
+        height: 50%;
+    }
+    .w-half{
+        width: 50%;
+    }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+    .py-big{
+        padding-block: 3rem;
+    }
+
+    .pbottom-0{
+        padding-bottom: 0;
+    }
+    .fs-0{
+        font-size: 1.5rem;
+    }
+    .text-small{
+        font-size: .75rem !important;
+    }
+}
